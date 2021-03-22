@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+
+  convert:
+    image: mpyw/amazon-vod-preset-convert-docker
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - $HOME/.aws:/root/.aws:cached
+    environment:
+      AWS_PROFILE: ${AWS_PROFILE:-default}
