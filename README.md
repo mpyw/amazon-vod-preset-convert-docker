@@ -25,7 +25,7 @@ optional arguments:
                         apple, dash, smooth
   -f, --save            Save presets to file
 
-user@host:~$ AWS_PROFILE=<Your Profile Name> ./convert.sh --help -i
+user@host:~$ AWS_PROFILE=<Your Profile Name> ./convert.sh -i
 Please type in a supported ETS region: ap-northeast-1
 Preset ID: ...
 ...
